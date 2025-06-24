@@ -33,6 +33,6 @@ jobs:
           publish_dir: ./dist # The directory containing your compiled static files
           publish_branch: gh-pages # The branch where you want to push the build
           # Uncomment the line below if you don't want Jekyll to process your site
-          cname: luciasylvia.fr # If you have a custom domain
+          # cname: luciasylvia.fr # If you have a custom domain
           # keep_files: true # Use this if you want to keep existing files in gh-pages and only update changed ones
           force_orphan: true # Recommended for clean builds, removes old history on gh-pages

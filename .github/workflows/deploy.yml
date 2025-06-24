@@ -1,0 +1,38 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main # Trigger on pushes to the main branch
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Grant write permissions to the GITHUB_TOKEN
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js (if your project uses Node for building)
+        uses: actions/setup-node@v4
+        with:
+          node-version: '23' # Or your project's Node.js version
+
+      - name: Install dependencies
+        run: npm install # Or yarn install, pnpm install
+
+      - name: Build project
+        run: npm run build # Or yarn build, pnpm build, or your custom build command
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4 # A popular action for deploying to gh-pages
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist # The directory containing your compiled static files
+          publish_branch: gh-pages # The branch where you want to push the build
+          # Uncomment the line below if you don't want Jekyll to process your site
+          cname: luciasylvia.fr # If you have a custom domain
+          # keep_files: true # Use this if you want to keep existing files in gh-pages and only update changed ones
+          force_orphan: true # Recommended for clean builds, removes old history on gh-pages

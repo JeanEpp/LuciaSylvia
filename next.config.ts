@@ -5,7 +5,12 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 });
 
 const nextConfig: NextConfig = {
-  output: 'export'
+  output: 'export',
+  basePath: '/LuciaSylvia',
+  assetPrefix: '/LuciaSylvia/',
+  images: {
+    unoptimized: true,
+  }
 };
 
 module.exports = withBundleAnalyzer(nextConfig);

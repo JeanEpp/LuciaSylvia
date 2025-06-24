@@ -20,7 +20,7 @@ const Etiquette: React.FC<EtiqettesProps> = ({ onClick, className, text, directi
                 <p className={`rotate-90 text-3xl h-[60%] flex items-center text-white justify-center hover:text-[#e6b94a] transition duration-100 text-nowrap ${animate ? "animate-fade-in" : "animate-fade-out"}`}>
                     {text}
                 </p>
-                <img className="mt-auto rotate-[15.82deg] pr-1" src={"/Libellule.webp"} alt={"Libellule"} width={60} height={45} />
+                <img className="mt-auto rotate-[15.82deg] pr-1" src={"/LuciaSylvia/Libellule.webp"} alt={"Libellule"} width={60} height={45} />
                 <div className='relative flex items-center justify-center text-2xl'>
                     <p className="absolute top-[-10px]">LS</p>
                 </div>

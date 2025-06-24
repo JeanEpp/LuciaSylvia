@@ -68,7 +68,7 @@ export default function Perfumes() {
                     </CarouselVertical>
                 </div>
                 <div className="flex relative h-fit self-end">
-                    <img className="self-end" src="/Flacon10ml.webp" alt="Flacon" width={55} height={50} />
+                    <img className="self-end" src="/LuciaSylvia/Flacon10ml.webp" alt="Flacon" width={55} height={50} />
                     <Etiquette
                         direction="vertical"
                         text={currentEtiquette.name}
@@ -77,11 +77,11 @@ export default function Perfumes() {
                     />
                 </div>
                 <div id="Flacons" className="flex relative h-fit self-end">
-                    <img className="self-end" src={"/Flacon50ml.webp"} alt={"Flacon"} width={175} height={150} />
-                    <img className="absolute left-[20px] top-[39%]" src="/Etiquette50ml.webp" alt="Etiquettes 50 ML" width={135} height={130} />
+                    <img className="self-end" src={"/LuciaSylvia/Flacon50ml.webp"} alt={"Flacon"} width={175} height={150} />
+                    <img className="absolute left-[20px] top-[39%]" src="/LuciaSylvia/Etiquette50ml.webp" alt="Etiquettes 50 ML" width={135} height={130} />
                 </div>
                 <div className="flex relative h-fit self-end overflow-hidden">
-                    <img className="self-end" src="/Flacon5ml.webp" alt="Flacon" width={55} height={50} />
+                    <img className="self-end" src="/LuciaSylvia/Flacon5ml.webp" alt="Flacon" width={55} height={50} />
                     <Etiquette
                         direction="horizontal"
                         text={currentEtiquette.name}

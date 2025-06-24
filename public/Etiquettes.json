@@ -1,0 +1,119 @@
+{
+    "version": "2.0.0",
+    "Etiquettes": [
+        {
+            "name": "Agrippina",
+            "description": "Agrippina est un parfum aromatique, doux. Il associe la lavande et les aiguilles de pin à la rondeur discrète des fruits du verger, pour une senteur fraîche et équilibrée.",
+            "composition": ["Bergamote", "Rose", "Romarin"],
+            "prix": 1.30
+        },
+        {
+            "name": "Amarante",
+            "description": "Amarante est un parfum gourmand aux accents de fruits rouges. Cassis, mûre et groseilles s’y mêlent à des notes douces de bois, de feuilles de cassis et de cerisier, pour une sente",
+            "composition": ["Fruits rouges", "Bois", "Cassis"],
+            "prix": 1.40
+        },
+        {
+            "name": "Arille",
+            "description": "Arille est un parfum frais hespéridé. Il combine le magnolia avec les notes d'orange, de clémentine, de mandarine et de combawa, sur un fond boisé.",
+            "composition": [],
+            "prix": 1.30
+        },
+        {
+            "name": "Caliche",
+            "description": "Caliche est un parfum boisé, frais, aux accents de cologne. Le bois d’agar et le cèdre s’accordent à la note subtile d’encens pontifical pour une senteur claire et élégante.",
+            "composition": [],
+            "prix": 1.20
+        },
+        {
+            "name": "Cananga",
+            "description": "Cananga est un parfum floral intense, aux accents de fleurs blanches. Il associe la richesse du gardénia, de roses et du natchanga sur un fond d'ylang-ylang et d'osmanthus, pour une fragrance enivrante et voluptueuse.",
+            "composition": [],
+            "prix": 1.50
+        },
+        {
+            "name": "Esperente",
+            "description": "Esperente est un parfum frais et fruité, inspiré d’un verger. On y retrouve la douceur de la poire, du coing et de la pelure de pomme, mêlée à des notes légères de bois et de feuilles de poirier et de pommier.",
+            "composition": [],
+            "prix": 1.20
+        },
+        {
+            "name": "Havane",
+            "description": "Havane est un parfum doux et réconfortant, aux accents gourmands et fleuris. Il mêle la fraîcheur de la bergamote et de la rose à la fleur d’oranger, sur un fond chaleureux de musc, d’ambre et de vanille.",
+            "composition": [],
+            "prix": 1.60
+        },
+        {
+            "name": "Kalahari",
+            "description": "Kalahari est un parfum frais et fruité, évoquant la douceur des eaux claires. Le concombre de mer et les algues s’allient à des touches légères de fucus et de tisane de sel, pour une fragrance aquatique, légèrement sucrée et rafraîchissante",
+            "composition": [],
+            "prix": 1.10
+        },
+        {
+            "name": "L'harmonieux",
+            "description": "L’Harmonieux est un parfum chaleureux et boisé, où se mêlent la fraîcheur de la bergamote, la douceur de la rose et la profondeur du patchouli, du cuir et de l’encens. Un mélange subtil, à la fois floral, boisé et enveloppant.",
+            "composition": [],
+            "prix": 1.40
+        },
+        {
+            "name": "Le concret",
+            "description": "Le Concret est un parfum qui joue sur les contrastes. Des notes fraîches de lavande et d’héliotrope rencontrent la sécheresse du vétiver et du bois de guar. En fond, la vanille, la tonka et le benjoin apportent un peu de rondeur, sans trop en faire. C’est simple, brut, avec juste ce qu’il faut de chaleur.",
+            "composition": [],
+            "prix": 1.40
+        },
+        {
+            "name": "Le créatif",
+            "description": "Le Créatif est un parfum frais et boisé, où se mélangent la poire, le coing et la pelure de pomme, adoucis par la fleur d’oranger et la rose. Le tout repose sur un fond léger de musc, d’ambre, de bois et de feuilles de poirier et de pommier, relevé d’une touche de vanille et de bergamote. Un parfum doux, vif et facile à porter.",
+            "composition": [],
+            "prix": 1.40
+        },
+        {
+            "name": "Le libre",
+            "description": "Le Libre est un parfum boisé et aromatique. Le vétiver terreux,  s’allie aux notes sèches et herbacées du bois de romarin. Une senteur brute et claire, inspirée par la nature.",
+            "composition": [],
+            "prix": 1.40
+        },
+        {
+            "name": "Le pionnier",
+            "description": "Le Pionnier est un parfum frais et vif, né au cœur des agrumes. Il mêle l’éclat de la bergamote à la pulpe acidulée du pamplemousse, sur un fond doux de musc.",
+            "composition": [],
+            "prix": 1.40
+        },
+        {
+            "name": "Le protecteur",
+            "description": "Le Protecteur est un parfum floral et chaleureux. La rose de Turquie se mêle au ciste et au benjoin, dans un cœur riche et enveloppant. En fond, la vanille, le bois de gaïac et l’ambre apportent une chaleur douce et apaisante.",
+            "composition": [],
+            "prix": 1.40
+        },
+        {
+            "name": "Le puissant",
+            "description": "Le Puissant est un parfum floral et frais. La rose rouge et l’iris se mêlent aux notes d’agrumes, posées sur un fond boisé de oud, patchouli et vétiver. L’ambre apporte une chaleur douce et équilibrée.",
+            "composition": [],
+            "prix": 1.40
+        },
+        {
+            "name": "Le spirituel",
+            "description": "Le Spirituel est un parfum frais et terreux. Les fleurs blanches, la bergamote et le pamplemousse apportent une fraîcheur légère, posée sur un fond de patchouli et de graine d’ambrette. Une senteur calme et ancrée",
+            "composition": [],
+            "prix": 1.40
+        },
+        {
+            "name": "Myrrha",
+            "description": "Myrrha est un parfum frais et boisé, aux accents épicés. Il mêle les notes du cyprès, du cèdre et du patchouli au côté poudré de l’iris, sur un fond profond de myrrhe, d’ambre, de cuir, et de vanille.",
+            "composition": [],
+            "prix": 1.60
+        },
+        {
+            "name": "Orior",
+            "description": "Orior est un parfum oriental chaud et fleuri. Il mêle la fraîcheur de la bergamote aux notes florales de rose, de jasmin et de fleur d’oranger, relevées par une touche de fruits rouges. En fond, le patchouli, le cèdre, l’encens, l’ambre et le musc apportent profondeur et chaleur.",
+            "composition": [],
+            "prix": 1.60
+        },
+        {
+            "name": "Vedado",
+            "description": "Vedado est un parfum frais d’agrumes, relevé par une touche de poivre. Il associe la bergamote à la rose, sur un fond doux de tabac et d’ambre.",
+            "composition": [],
+            "prix": 1.60
+        }
+    ]
+}

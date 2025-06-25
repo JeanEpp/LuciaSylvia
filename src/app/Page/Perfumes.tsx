@@ -22,21 +22,21 @@ interface ImageData {
 export default function Perfumes() {
     const [animate, setAnimate] = useState(true);
     const [currentIndex, setCurrentIndex] = useState(0);
-    const [data, setData] = useState<ImageData>({ Etiquettes: [{ name: "", description: "", composition: ["", "", ""], prix: 0 }] });
-    const [currentEtiquette, setEtiquette] = useState(data.Etiquettes[currentIndex]);
+    const [data, setData] = useState<ImageData | null>(null);
+    const [currentEtiquette, setEtiquette] = useState<ImageData['Etiquettes'][number] | null>(null);
     const { font } = useFont();
 
     React.useEffect(() => {
         const fetchData = async () => {
             const result = await getPerfumeNames();
             setData(result);
-            setEtiquette(result.Etiquettes[currentIndex]);
+            data ?? setEtiquette(result.Etiquettes[currentIndex]);
         };
         fetchData();
     }, [currentIndex]);
 
     const handleChildValueChange = (newValue: number) => {
-        if (newValue != currentIndex) {
+        if (data && newValue != currentIndex) {
             setAnimate(false);
             setTimeout(() => setAnimate(true), 600);
             setTimeout(() => setCurrentIndex(newValue), 600);
@@ -44,6 +44,8 @@ export default function Perfumes() {
         }
     };
 
+    if (data === null || currentEtiquette === null)
+        return <div className="text-white text-center">Loading...</div>;
     return (
         <div id="Parfums" className="h-min:screen text-center justify-items-center pb-8 pt-28 content-center space-y-9">
             <h1 className={`text-5xl font-semibold text-balance text-white text-center sm:text-5xl ${font}`}>Parfums :</h1>

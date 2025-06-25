@@ -46,7 +46,7 @@ export default function Perfumes() {
     };
 
     if (data === null || currentEtiquette === null)
-        return <div className="text-white text-center">Loading...</div>;
+        return <div id="Parfums" className="text-white text-center">Loading...</div>;
     return (
         <div id="Parfums" className="h-min:screen text-center justify-items-center pb-8 pt-28 content-center space-y-9">
             <h1 className={`text-5xl font-semibold text-balance text-white text-center sm:text-5xl ${font}`}>Parfums :</h1>

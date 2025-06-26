@@ -30,7 +30,7 @@ export default function Perfumes() {
         const fetchData = async () => {
             const result = await getPerfumeNames();
             setData(result);
-            if (data !== null)
+            if (result !== null)
                 setEtiquette(result.Etiquettes[currentIndex]);
         };
         fetchData();

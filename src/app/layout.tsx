@@ -4,14 +4,14 @@ import { Providers } from "./Providers";
 import Navbar from "./Components/Navbar";
 
 export const metadata: Metadata = {
-  title: "Lucia Sylvia",
-  description: "Parfumerie naturelle",
+  title: "Lucia Sylvia - Parfumerie Naturelle",
+  description: "Découvrez Lucia Sylvia, votre parfumerie naturelle en ligne. Parfums artisanaux, éthiques et inspirés par la nature. Retrouvez nos coordonnées : parfumerie@luciasylvia.fr et +33 6 72 45 84 17.",
   icons: {
     icon: "/favicon.ico",
   },
   openGraph: {
-    title: 'Lucia Sylvia',
-    description: 'Découvrez Lucia Sylvia, votre parfumerie naturelle en ligne. Explorez une gamme de parfums artisanaux, créés avec passion et respect de la nature. Commandez dès maintenant pour une expérience olfactive unique.',
+    title: 'Lucia Sylvia - Parfumerie Naturelle',
+    description: 'Découvrez Lucia Sylvia, votre parfumerie naturelle en ligne. Parfums artisanaux, éthiques et inspirés par la nature. Retrouvez nos coordonnées : parfumerie@luciasylvia.fr et +33 6 72 45 84 17.',
     url: 'https://www.luciasylvia.fr',
     siteName: 'Lucia Sylvia - Parfumerie Naturelle',
     images: [

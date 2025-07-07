@@ -1,10 +1,7 @@
 import type { Metadata } from "next";
-import type { WithContext, Organization } from 'schema-dts';
 import "./globals.css";
 import { Providers } from "./Providers";
 import Navbar from "./Components/Navbar";
-import StructuredData from './Components/StructuredData';
-
 
 export const metadata: Metadata = {
   title: "Lucia Sylvia - Parfumerie Naturelle",
@@ -30,17 +27,6 @@ export const metadata: Metadata = {
   }
 };
 
-const organizationSchema: WithContext<Organization> = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Lucia Sylvia - Parfumerie Naturelle",
-  "url": "https://www.luciasylvia.fr",
-  "logo": "https://www.luciasylvia.fr/favicon.ico",
-  "description": "Découvrez Lucia Sylvia, votre parfumerie naturelle en ligne. Parfums artisanaux, éthiques et inspirés par la nature.",
-  "sameAs": [
-  ]
-};
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -48,9 +34,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <head>
-        <StructuredData data={organizationSchema} />
-      </head>
       <body className={`antialiased top-0`}>
         <Providers>
           <Navbar />

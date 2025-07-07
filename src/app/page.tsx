@@ -3,7 +3,7 @@ import Perfumes from './Page/Perfumes';
 import Contacts from './Page/Contacts';
 import StructuredData from './Components/StructuredData';
 
-import type { WithContext, Organization, LocalBusiness, PostalAddress, OpeningHoursSpecification } from 'schema-dts';
+import type { WithContext, Organization } from 'schema-dts';
 
 const organizationSchema: WithContext<Organization> = {
   "@context": "https://schema.org",

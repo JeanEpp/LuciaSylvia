@@ -7,14 +7,28 @@ import getPerfumeNames from "../etiquettes";
 import Etiquette from "../Components/Etiquette";
 import CarouselVertical from "../Components/CarouselVertical";
 import Notes from "../Components/Notes";
+import { Product, WithContext } from "schema-dts";
+import StructuredData from "../Components/StructuredData";
 
 interface ImageData {
     Etiquettes: [
         {
             name: string;
             description: string;
+            sku: string;
             composition: string[];
-            prix: number;
+            price: number;
+            availability: | 'https://schema.org/BackOrder'
+                | 'https://schema.org/Discontinued'
+                | 'https://schema.org/InStock'
+                | 'https://schema.org/InStoreOnly'
+                | 'https://schema.org/LimitedAvailability'
+                | 'https://schema.org/OnlineOnly'
+                | 'https://schema.org/OutOfStock'
+                | 'https://schema.org/PreOrder'
+                | 'https://schema.org/PreSale'
+                | 'https://schema.org/SoldOut';
+            images: string[];
         }
     ]
 }
@@ -25,6 +39,29 @@ export default function Perfumes() {
     const [data, setData] = useState<ImageData | null>(null);
     const [currentEtiquette, setEtiquette] = useState<ImageData['Etiquettes'][number] | null>(null);
     const { font } = useFont();
+    let productSchema: WithContext<Product> | null = null;
+    
+    if (currentEtiquette)
+        productSchema = {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": currentEtiquette.name,
+        "description": currentEtiquette.description,
+        "sku": currentEtiquette.sku,
+        "image": currentEtiquette.images,
+        "offers": {
+            "@type": "Offer",
+            "priceCurrency": "EUR",
+            "price": currentEtiquette.price,
+            "itemCondition": "https://schema.org/NewCondition",
+            "availability": currentEtiquette.availability,
+            "url": `https://www.luciasylvia.fr/perfumes/${currentEtiquette}`,
+            "seller": {
+                "@type": "Organization",
+                "name": "Lucia Sylvia - Parfumerie Naturelle"
+            }
+        }
+    };
 
     React.useEffect(() => {
         const fetchData = async () => {
@@ -97,7 +134,7 @@ export default function Perfumes() {
                         <Notes animate={animate} composition={currentEtiquette.composition} />
                     }
                     <div className={`flex flex-row items-center ${currentEtiquette.composition && currentEtiquette.composition.length > 0 ? "pt-2" : `lg:pb-24 text-xl`} ${animate ? "animate-fade-in" : "animate-fade-out"}`}>
-                        {currentEtiquette.prix?.toString().replace('.', ",")} €/ml
+                        {currentEtiquette.price?.toString().replace('.', ",")} €/ml
                     </div>
                 </div>
                 <div className={`col-span-3 lg:col-span-4 items-center`}>
@@ -113,6 +150,7 @@ export default function Perfumes() {
                         </button>
                     </ScrollLink>
                 </div>
+                {productSchema && <StructuredData data={productSchema} />}
             </div>
         </div>
     )

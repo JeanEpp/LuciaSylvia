@@ -4,116 +4,173 @@
         {
             "name": "Agrippina",
             "description": "Agrippina est un parfum aromatique, doux. Il associe la lavande et les aiguilles de pin à la rondeur discrète des fruits du verger, pour une senteur fraîche et équilibrée.",
+            "sku": "PERFUME-AGRIPINA",
             "composition": ["Bergamote", "Rose", "Romarin"],
-            "prix": 1.30
+            "price": 1.30,
+            "availability": "https://schema.org/InStock",
+            "image": ["https://www.luciasylvia.fr/images/Agrippina.webp"]
         },
         {
             "name": "Amarante",
             "description": "Amarante est un parfum gourmand aux accents de fruits rouges. Cassis, mûre et groseilles s’y mêlent à des notes douces de bois, de feuilles de cassis et de cerisier, pour une sente",
+            "sku": "PERFUME-AMARANTE",
             "composition": ["Fruits rouges", "Bois", "Cassis"],
-            "prix": 1.40
+            "price": 1.40,
+            "availability": "https://schema.org/InStock",
+            "image": ["https://www.luciasylvia.fr/images/Amarante.webp"]
         },
         {
             "name": "Arille",
             "description": "Arille est un parfum frais hespéridé. Il combine le magnolia avec les notes d'orange, de clémentine, de mandarine et de combawa, sur un fond boisé.",
+            "sku": "PERFUME-ARILLE",
             "composition": [],
-            "prix": 1.30
+            "price": 1.30,
+            "availability": "https://schema.org/InStock",
+            "image": ["https://www.luciasylvia.fr/images/Arille.webp"]
         },
         {
             "name": "Caliche",
             "description": "Caliche est un parfum boisé, frais, aux accents de cologne. Le bois d’agar et le cèdre s’accordent à la note subtile d’encens pontifical pour une senteur claire et élégante.",
+            "sku": "PERFUME-CALICHE",
             "composition": [],
-            "prix": 1.20
+            "price": 1.20,
+            "availability": "https://schema.org/InStock",
+            "image": ["https://www.luciasylvia.fr/images/Caliche.webp"]
         },
         {
             "name": "Cananga",
             "description": "Cananga est un parfum floral intense, aux accents de fleurs blanches. Il associe la richesse du gardénia, de roses et du natchanga sur un fond d'ylang-ylang et d'osmanthus, pour une fragrance enivrante et voluptueuse.",
+            "sku": "PERFUME-CANANGA",
             "composition": [],
-            "prix": 1.50
+            "price": 1.50,
+            "availability": "https://schema.org/InStock",
+            "image": ["https://www.luciasylvia.fr/images/Cananga.webp"]
         },
         {
             "name": "Esperente",
             "description": "Esperente est un parfum frais et fruité, inspiré d’un verger. On y retrouve la douceur de la poire, du coing et de la pelure de pomme, mêlée à des notes légères de bois et de feuilles de poirier et de pommier.",
+            "sku": "PERFUME-ESPERENTE",
             "composition": [],
-            "prix": 1.20
+            "price": 1.20,
+            "availability": "https://schema.org/InStock",
+            "image": ["https://www.luciasylvia.fr/images/Esperente.webp"]
         },
         {
             "name": "Havane",
             "description": "Havane est un parfum doux et réconfortant, aux accents gourmands et fleuris. Il mêle la fraîcheur de la bergamote et de la rose à la fleur d’oranger, sur un fond chaleureux de musc, d’ambre et de vanille.",
+            "sku": "PERFUME-HAVANE",
             "composition": [],
-            "prix": 1.60
+            "price": 1.60,
+            "availability": "https://schema.org/InStock",
+            "image": ["https://www.luciasylvia.fr/images/Havane.webp"]
         },
         {
             "name": "Kalahari",
             "description": "Kalahari est un parfum frais et fruité, évoquant la douceur des eaux claires. Le concombre de mer et les algues s’allient à des touches légères de fucus et de tisane de sel, pour une fragrance aquatique, légèrement sucrée et rafraîchissante",
+            "sku": "PERFUME-KALAHARI",
             "composition": [],
-            "prix": 1.10
+            "price": 1.10,
+            "availability": "https://schema.org/InStock",
+            "image": ["https://www.luciasylvia.fr/images/Kalahari.webp"]
         },
         {
             "name": "L'harmonieux",
             "description": "L’Harmonieux est un parfum chaleureux et boisé, où se mêlent la fraîcheur de la bergamote, la douceur de la rose et la profondeur du patchouli, du cuir et de l’encens. Un mélange subtil, à la fois floral, boisé et enveloppant.",
+            "sku": "PERFUME-HARMONIEUX",
             "composition": [],
-            "prix": 1.40
+            "price": 1.40,
+            "availability": "https://schema.org/InStock",
+            "image": ["https://www.luciasylvia.fr/images/Harmonieux.webp"]
         },
         {
             "name": "Le concret",
             "description": "Le Concret est un parfum qui joue sur les contrastes. Des notes fraîches de lavande et d’héliotrope rencontrent la sécheresse du vétiver et du bois de guar. En fond, la vanille, la tonka et le benjoin apportent un peu de rondeur, sans trop en faire. C’est simple, brut, avec juste ce qu’il faut de chaleur.",
+            "sku": "PERFUME-CONCRET",
             "composition": [],
-            "prix": 1.40
+            "price": 1.40,
+            "availability": "https://schema.org/InStock",
+            "image": ["https://www.luciasylvia.fr/images/Concret.webp"]
         },
         {
             "name": "Le créatif",
             "description": "Le Créatif est un parfum frais et boisé, où se mélangent la poire, le coing et la pelure de pomme, adoucis par la fleur d’oranger et la rose. Le tout repose sur un fond léger de musc, d’ambre, de bois et de feuilles de poirier et de pommier, relevé d’une touche de vanille et de bergamote. Un parfum doux, vif et facile à porter.",
+            "sku": "PERFUME-CREATIF",
             "composition": [],
-            "prix": 1.40
+            "price": 1.40,
+            "availability": "https://schema.org/InStock",
+            "image": ["https://www.luciasylvia.fr/images/Creatif.webp"]
         },
         {
             "name": "Le libre",
             "description": "Le Libre est un parfum boisé et aromatique. Le vétiver terreux,  s’allie aux notes sèches et herbacées du bois de romarin. Une senteur brute et claire, inspirée par la nature.",
+            "sku": "PERFUME-LIBRE",
             "composition": [],
-            "prix": 1.40
+            "price": 1.40,
+            "availability": "https://schema.org/InStock",
+            "image": ["https://www.luciasylvia.fr/images/Libre.webp"]
         },
         {
             "name": "Le pionnier",
             "description": "Le Pionnier est un parfum frais et vif, né au cœur des agrumes. Il mêle l’éclat de la bergamote à la pulpe acidulée du pamplemousse, sur un fond doux de musc.",
+            "sku": "PERFUME-PIONNIER",
             "composition": [],
-            "prix": 1.40
+            "price": 1.40,
+            "availability": "https://schema.org/InStock",
+            "image": ["https://www.luciasylvia.fr/images/Pionnier.webp"]
         },
         {
             "name": "Le protecteur",
             "description": "Le Protecteur est un parfum floral et chaleureux. La rose de Turquie se mêle au ciste et au benjoin, dans un cœur riche et enveloppant. En fond, la vanille, le bois de gaïac et l’ambre apportent une chaleur douce et apaisante.",
+            "sku": "PERFUME-PROTECTEUR",
             "composition": [],
-            "prix": 1.40
+            "price": 1.40,
+            "availability": "https://schema.org/InStock",
+            "image": ["https://www.luciasylvia.fr/images/Protecteur.webp"]
         },
         {
             "name": "Le puissant",
             "description": "Le Puissant est un parfum floral et frais. La rose rouge et l’iris se mêlent aux notes d’agrumes, posées sur un fond boisé de oud, patchouli et vétiver. L’ambre apporte une chaleur douce et équilibrée.",
+            "sku": "PERFUME-PUISSANT",
             "composition": [],
-            "prix": 1.40
+            "image": ["https://www.luciasylvia.fr/images/Puissant.webp"],
+            "price": 1.40,
+            "availability": "https://schema.org/InStock"
         },
         {
             "name": "Le spirituel",
             "description": "Le Spirituel est un parfum frais et terreux. Les fleurs blanches, la bergamote et le pamplemousse apportent une fraîcheur légère, posée sur un fond de patchouli et de graine d’ambrette. Une senteur calme et ancrée",
+            "sku": "PERFUME-SPIRITUEL",
             "composition": [],
-            "prix": 1.40
+            "image": ["https://www.luciasylvia.fr/images/Spirituel.webp"],
+            "price": 1.40,
+            "availability": "https://schema.org/InStock"
         },
         {
             "name": "Myrrha",
             "description": "Myrrha est un parfum frais et boisé, aux accents épicés. Il mêle les notes du cyprès, du cèdre et du patchouli au côté poudré de l’iris, sur un fond profond de myrrhe, d’ambre, de cuir, et de vanille.",
+            "sku": "PERFUME-MYRRHA",
             "composition": [],
-            "prix": 1.60
+            "image": ["https://www.luciasylvia.fr/images/Myrrha.webp"],
+            "price": 1.60,
+            "availability": "https://schema.org/InStock"
         },
         {
             "name": "Orior",
             "description": "Orior est un parfum oriental chaud et fleuri. Il mêle la fraîcheur de la bergamote aux notes florales de rose, de jasmin et de fleur d’oranger, relevées par une touche de fruits rouges. En fond, le patchouli, le cèdre, l’encens, l’ambre et le musc apportent profondeur et chaleur.",
+            "sku": "PERFUME-ORIOR",
             "composition": [],
-            "prix": 1.60
+            "image": ["https://www.luciasylvia.fr/images/Orior.webp"],
+            "price": 1.60,
+            "availability": "https://schema.org/InStock"
         },
         {
             "name": "Vedado",
             "description": "Vedado est un parfum frais d’agrumes, relevé par une touche de poivre. Il associe la bergamote à la rose, sur un fond doux de tabac et d’ambre.",
+            "sku": "PERFUME-VEDADO",
             "composition": [],
-            "prix": 1.60
+            "price": 1.60,
+            "availability": "https://schema.org/InStock",
+            "image": ["https://www.luciasylvia.fr/images/Vedado.webp"]
         }
     ]
 }

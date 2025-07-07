@@ -150,7 +150,7 @@ export default function Perfumes() {
                         </button>
                     </ScrollLink>
                 </div>
-                {productSchema && <StructuredData data={productSchema} />}
+                {/*productSchema && <StructuredData data={productSchema} />*/}
             </div>
         </div>
     )

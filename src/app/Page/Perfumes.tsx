@@ -7,8 +7,8 @@ import getPerfumeNames from "../etiquettes";
 import Etiquette from "../Components/Etiquette";
 import CarouselVertical from "../Components/CarouselVertical";
 import Notes from "../Components/Notes";
-//import { Product, WithContext } from "schema-dts";
-//import StructuredData from "../Components/StructuredData";
+import { Product, WithContext } from "schema-dts";
+import StructuredData from "../Components/StructuredData";
 
 interface ImageData {
     Etiquettes: [
@@ -39,9 +39,9 @@ export default function Perfumes() {
     const [data, setData] = useState<ImageData | null>(null);
     const [currentEtiquette, setEtiquette] = useState<ImageData['Etiquettes'][number] | null>(null);
     const { font } = useFont();
-    //let productSchema: WithContext<Product> | null = null;
+    let productSchema: WithContext<Product> | null = null;
     
-    /*if (currentEtiquette)
+    if (currentEtiquette)
         productSchema = {
         "@context": "https://schema.org",
         "@type": "Product",
@@ -61,7 +61,7 @@ export default function Perfumes() {
                 "name": "Lucia Sylvia - Parfumerie Naturelle"
             }
         }
-    };*/
+    };
 
     React.useEffect(() => {
         const fetchData = async () => {
@@ -150,7 +150,7 @@ export default function Perfumes() {
                         </button>
                     </ScrollLink>
                 </div>
-                {/*productSchema && <StructuredData data={productSchema} />*/}
+                {productSchema && <StructuredData data={productSchema} />}
             </div>
         </div>
     )

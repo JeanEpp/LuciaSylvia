@@ -28,7 +28,7 @@ interface ImageData {
                 | 'https://schema.org/PreOrder'
                 | 'https://schema.org/PreSale'
                 | 'https://schema.org/SoldOut';
-            images: string[];
+            image: string[];
         }
     ]
 }
@@ -48,14 +48,14 @@ export default function Perfumes() {
         "name": currentEtiquette.name,
         "description": currentEtiquette.description,
         "sku": currentEtiquette.sku,
-        "image": currentEtiquette.images,
+        "image": currentEtiquette.image,
         "offers": {
             "@type": "Offer",
             "priceCurrency": "EUR",
             "price": currentEtiquette.price,
             "itemCondition": "https://schema.org/NewCondition",
             "availability": currentEtiquette.availability,
-            "url": `https://www.luciasylvia.fr/perfumes/${currentEtiquette}`,
+            "url": `https://www.luciasylvia.fr`,
             "seller": {
                 "@type": "Organization",
                 "name": "Lucia Sylvia - Parfumerie Naturelle"

@@ -12,8 +12,8 @@ const organizationSchema: WithContext<Organization> = {
   "url": "https://www.luciasylvia.fr",
   "logo": "https://www.luciasylvia.fr/favicon.ico",
   "description": "Découvrez Lucia Sylvia, votre parfumerie naturelle en ligne. Parfums artisanaux, éthiques et inspirés par la nature.",
-  "sameAs": [
-  ]
+  "email": "parfumerie@luciasylvia.fr",
+  "telephone": "+33 6 72 45 84 17",
 };
 
 export default function Home() {

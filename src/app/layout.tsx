@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
-import "./globals.css";
-import { Providers } from "./Providers";
-import Navbar from "./Components/Navbar";
+import Navbar from "@/app/Components/Navbar";
+import "@/app/globals.css";
 
 export const metadata: Metadata = {
   title: "Lucia Sylvia - Parfumerie Naturelle",
@@ -34,11 +33,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
+      <head>
+        <link href="https://fonts.googleapis.com/css2?family=Carattere&display=swap" rel="stylesheet" />
+      </head>
       <body className={`antialiased top-0`}>
-        <Providers>
           <Navbar />
-          {children}
-        </Providers>
+          <div className="pt-14 lg:px-8">
+            {children}
+          </div>
       </body>
     </html>
   );

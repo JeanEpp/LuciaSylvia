@@ -1,9 +1,8 @@
-import Accueil from "./Page/Accueil";
-import Perfumes from './Page/Perfumes';
-import Contacts from './Page/Contacts';
-import StructuredData from './Components/StructuredData';
-
 import type { WithContext, Organization } from 'schema-dts';
+import Accueil from "@/app/Page/Accueil";
+import Perfumes from '@/app/Page/Perfumes';
+import Contacts from '@/app/Page/Contacts';
+import StructuredData from '@/app/Components/StructuredData';
 
 const organizationSchema: WithContext<Organization> = {
   "@context": "https://schema.org",

@@ -2,11 +2,9 @@
 import Link from "next/link";
 import { useState } from "react";
 import { Link as ScrollLink } from "react-scroll";
-import { useFont } from "../FontContext";
 
 export default function Navbar() {
 	const [isOpen, setIsOpen] = useState(false);
-	const { font }= useFont();
 
 	return (
 		<header className="top-0 h-0 z-50 sticky">
@@ -31,7 +29,7 @@ export default function Navbar() {
 							Parfums
 						</ScrollLink>
 					</div>
-					<Link href="/" className={`absolute shadow-black shadow h-14 w-14 top-2.5 rounded-full bg-white text-black ${font} text-center text-[22px] content-center`}>
+					<Link href="/" className={`absolute shadow-black shadow h-14 w-14 top-2.5 rounded-full bg-white text-black font-carattere text-center text-[22px] content-center`}>
 						<div className="pr-1 line" style={{lineHeight: 2.7}}>LS</div>
 					</Link>
 					<div className="hidden sm:block w-1/2">

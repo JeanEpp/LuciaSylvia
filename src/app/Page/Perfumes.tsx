@@ -7,6 +7,7 @@ import Etiquette from "@/app/Components/Etiquette";
 import CarouselVertical from "@/app/Components/CarouselVertical";
 import PerfumeClient from "@/app/perfume/[perfumeName]/ClientPerfume";
 import StructuredData from "@/app/Components/StructuredData";
+import { carattere } from "@/app/fonts";
 
 export default function Perfumes() {
     const [animate, setAnimate] = useState(true);
@@ -62,7 +63,7 @@ export default function Perfumes() {
         return <div id="Parfums" className="text-white text-center">Loading...</div>;
     return (
         <div id="Parfums" className="h-min:screen text-center justify-items-center pb-8 pt-28 content-center space-y-9">
-            <h1 className={`text-5xl font-semibold text-balance text-white text-center sm:text-5xl font-carattere`}>Parfums :</h1>
+            <h1 className={`${carattere.className} text-5xl font-semibold text-balance text-white text-center sm:text-5xl`}>Parfums :</h1>
             <div className="grid grid-rows-[auto_auto_auto_auto] sm:grid-rows-[auto_auto_auto] lg:grid-rows-[auto_auto] grid-cols-[55_175_55] sm:grid-cols-[289_55_175_55] lg:grid-cols-[289_55_175_55_289] justify-center gap-x-5 gap-y-10 lg:gap-8 self-center mx-auto">
                 <div className="flex flex-col col-span-3 sm:col-span-1 sm:row-span-3 lg:row-span-2">
                     <CarouselVertical itemsToShow={4} auto={true} id={"produits"} onValueChange={handleChildValueChange} className="flex justify-self-start h-full">

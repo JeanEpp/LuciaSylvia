@@ -3,6 +3,8 @@ import { Link as ScrollLink } from "react-scroll";
 import Etiquette from "@/app/Components/Etiquette";
 import Notes from "@/app/Components/Notes";
 import { IEtiquette } from "@/app/etiquettes";
+import Image from "next/image";
+import { carattere } from "@/app/fonts";
 
 export default function PerfumeClient({ etiquette, animate = true }: { etiquette: IEtiquette | null, animate?: boolean }) {
     if (etiquette === null)
@@ -10,20 +12,22 @@ export default function PerfumeClient({ etiquette, animate = true }: { etiquette
     return (
         <div className="grid grid-rows-[auto_auto_auto] sm:grid-rows-[auto_auto_auto] lg:grid-rows-[auto_auto] grid-cols-[55_175_55] sm:grid-cols-[55_175_55] lg:grid-cols-[55_175_55_289] justify-center gap-x-5 gap-y-10 lg:gap-8 self-center mx-auto">
             <div className="flex relative h-fit self-end">
-                <img className="self-end" src="/Flacon10ml.webp" alt="Flacon" width={55} height={50} />
-                <Etiquette
-                    direction="vertical"
-                    text={etiquette.name}
-                    className="absolute my-4 bg-[#262626] rounded-2xl top-[21%] left-[-10.5px] scale-[0.62]"
-                    animate={animate}
-                />
+                <Image className={"self-end"} src={"/Flacon10ml.webp"} alt={"Flacon"} width={55} height={283} style={{ objectFit: "cover" }}/>
+                <div className={"absolute top-[27%] left-[-19%] overflow-hidden"}>
+                    <Etiquette
+                        direction="vertical"
+                        text={etiquette.name}
+                        className="bg-[#262626] rounded-2xl scale-[0.62]"
+                        animate={animate}
+                    />
+                </div>
             </div>
             <div id="Flacons" className="flex relative h-fit self-end">
-                <img className="self-end" src={"/Flacon50ml.webp"} alt={"Flacon"} width={175} height={150} />
-                <img className="absolute left-[20px] top-[39%]" src="/Etiquette50ml.webp" alt="Etiquettes 50 ML" width={135} height={130} />
+                <Image className="self-end" src={"/Flacon50ml.webp"} alt={"Flacon"} width={175} height={318} />
+                <Image className="absolute left-[20px] top-[39%]" src="/Etiquette50ml.webp" alt="Etiquettes 50 ML" width={135} height={175} />
             </div>
             <div className="flex relative h-fit self-end overflow-hidden">
-                <img className="self-end" src="/Flacon5ml.webp" alt="Flacon" width={55} height={50} />
+                <Image className="self-end" src="/Flacon5ml.webp" alt="Flacon" width={55} height={219} />
                 <Etiquette
                     direction="horizontal"
                     text={etiquette.name}
@@ -47,7 +51,7 @@ export default function PerfumeClient({ etiquette, animate = true }: { etiquette
                     smooth={true}
                     duration={600}
                     offset={0}>
-                    <button className={`mt-5 text-xl bg-[#262626] text-white rounded-2xl px-4 py-2 cursor-pointer font-carattere`} role="button" aria-label="Commander un parfum">
+                    <button className={`${carattere.className} mt-5 text-xl bg-[#262626] text-white rounded-2xl px-4 py-2 cursor-pointer`} role="button" aria-label="Commander un parfum">
                         Commander
                     </button>
                 </ScrollLink>

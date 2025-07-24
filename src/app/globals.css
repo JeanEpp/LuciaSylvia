@@ -1,16 +1,10 @@
 @import "tailwindcss";
 
-@theme {
-  --font-carattere: 'Carattere', cursive;
-}
-
 :root {
   --background: #ffffff;
   --foreground: #171717;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -33,11 +27,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-}
-
-img {
-  max-width: 100%;
-  height: fit-content;
 }
 
 a:hover, button:hover {

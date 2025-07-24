@@ -33,9 +33,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <head>
-        <link href="https://fonts.googleapis.com/css2?family=Carattere&display=swap" rel="stylesheet" />
-      </head>
       <body className={`antialiased top-0`}>
           <Navbar />
           <div className="pt-14 lg:px-8">

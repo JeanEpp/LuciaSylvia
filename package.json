@@ -1,20 +1,23 @@
 {
   "name": "luciasylvia_website",
   "browserslist": [
-    "defaults",
-    "not IE 11"
+    "last 2 versions",
+    "> 0.5%",
+    "not dead",
+    "not IE 11",
+    "not op_mini all"
   ],
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build",
+    "build": "next build --turbopack",
     "start": "next start",
     "lint": "next lint",
     "analyze": "ANALYZE=true next build"
   },
   "dependencies": {
-    "next": "15.2.3",
+    "next": "^15.4.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.5.0",

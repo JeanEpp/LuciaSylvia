@@ -13,7 +13,7 @@ export default function PerfumeClient({ etiquette, animate = true, isPriority = 
     if (etiquette === null)
         return <div id="Parfums" className="text-white text-center">Loading...</div>;
     else {
-        let productSchema: WithContext<Product> = {
+        const productSchema: WithContext<Product> = {
             "@context": "https://schema.org",
             "@type": "Product",
             "name": etiquette.name,

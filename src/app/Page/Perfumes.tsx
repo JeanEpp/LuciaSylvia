@@ -1,12 +1,10 @@
 "use client"
 import { Link as ScrollLink } from "react-scroll";
 import { useEffect, useState } from "react";
-import { Product, WithContext } from "schema-dts";
 import getPerfumeNames, { IEtiquette } from "@/app/etiquettes";
 import Etiquette from "@/app/Components/Etiquette";
 import CarouselVertical from "@/app/Components/CarouselVertical";
 import PerfumeClient from "@/app/perfume/[perfumeName]/ClientPerfume";
-import StructuredData from "@/app/Components/StructuredData";
 import { carattere } from "@/app/fonts";
 
 export default function Perfumes() {

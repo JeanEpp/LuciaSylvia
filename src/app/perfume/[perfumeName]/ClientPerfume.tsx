@@ -5,14 +5,15 @@ import Notes from "@/app/Components/Notes";
 import { IEtiquette } from "@/app/etiquettes";
 import Image from "next/image";
 import { carattere } from "@/app/fonts";
+import "style.css";
 
-export default function PerfumeClient({ etiquette, animate = true }: { etiquette: IEtiquette | null, animate?: boolean }) {
+export default function PerfumeClient({ etiquette, animate = true, isPriority = false }: { etiquette: IEtiquette | null, animate?: boolean, isPriority?: boolean }) {
     if (etiquette === null)
         return <div id="Parfums" className="text-white text-center">Loading...</div>;
     return (
         <div className="grid grid-rows-[auto_auto_auto] sm:grid-rows-[auto_auto_auto] lg:grid-rows-[auto_auto] grid-cols-[55_175_55] sm:grid-cols-[55_175_55] lg:grid-cols-[55_175_55_289] justify-center gap-x-5 gap-y-10 lg:gap-8 self-center mx-auto">
             <div className="flex relative h-fit self-end">
-                <Image className={"self-end"} src={"/Flacon10ml.webp"} alt={"Flacon"} width={55} height={283} style={{ objectFit: "cover" }}/>
+                <Image className={"self-end"} src={"/Flacon10ml.webp"} alt={"Flacon"} width={55} height={283} style={{ objectFit: "cover" }} priority={isPriority}/>
                 <div className={"absolute top-[27%] left-[-19%] overflow-hidden"}>
                     <Etiquette
                         direction="vertical"
@@ -23,11 +24,11 @@ export default function PerfumeClient({ etiquette, animate = true }: { etiquette
                 </div>
             </div>
             <div id="Flacons" className="flex relative h-fit self-end">
-                <Image className="self-end" src={"/Flacon50ml.webp"} alt={"Flacon"} width={175} height={314} />
-                <Image className="absolute left-[20px] top-[39%]" src="/Etiquette50ml.webp" alt="Etiquettes 50 ML" width={135} height={175} />
+                <Image className="self-end" src={"/Flacon50ml.webp"} alt={"Flacon"} width={175} height={314} priority={isPriority} />
+                <Image className="absolute left-[20px] top-[39%]" src="/Etiquette50ml.webp" alt="Etiquettes 50 ML" width={135} height={175} priority={isPriority} />
             </div>
             <div className="flex relative h-fit self-end overflow-hidden">
-                <Image className="self-end" src="/Flacon5ml.webp" alt="Flacon" width={55} height={219} />
+                <Image className="self-end" src="/Flacon5ml.webp" alt="Flacon" width={55} height={219} priority={isPriority} />
                 <Etiquette
                     direction="horizontal"
                     text={etiquette.name}

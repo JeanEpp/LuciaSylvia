@@ -13,7 +13,7 @@ export default function PerfumeClient({ etiquette, animate = true, isPriority = 
     return (
         <div className="grid grid-rows-[auto_auto_auto] sm:grid-rows-[auto_auto_auto] lg:grid-rows-[auto_auto] grid-cols-[55_175_55] sm:grid-cols-[55_175_55] lg:grid-cols-[55_175_55_289] justify-center gap-x-5 gap-y-10 lg:gap-8 self-center mx-auto">
             <div className="flex relative h-fit self-end">
-                <Image className={"self-end"} src={"/Flacon10ml.webp"} alt={"Flacon"} width={55} height={283} style={{ objectFit: "cover" }} fetchPriority={isPriority ? "high" : "low"}/>
+                <Image className={"self-end"} src={"/Flacon10ml.webp"} alt={"Flacon"} width={55} height={283} style={{ objectFit: "cover" }} fetchPriority={isPriority ? "high" : "low"} priority={isPriority}/>
                 <div className={"absolute top-[27%] left-[-19%] overflow-hidden"}>
                     <Etiquette
                         direction="vertical"
@@ -24,11 +24,11 @@ export default function PerfumeClient({ etiquette, animate = true, isPriority = 
                 </div>
             </div>
             <div id="Flacons" className="flex relative h-fit self-end">
-                <Image className="self-end" src={"/Flacon50ml.webp"} alt={"Flacon"} width={175} height={314} fetchPriority={isPriority ? "high" : "low"} />
-                <Image className="absolute left-[20px] top-[39%]" src="/Etiquette50ml.webp" alt="Etiquettes 50 ML" width={135} height={175} fetchPriority={isPriority ? "high" : "low"} />
+                <Image className="self-end" src={"/Flacon50ml.webp"} alt={"Flacon"} width={175} height={314} fetchPriority={isPriority ? "high" : "low"} priority={isPriority} />
+                <Image className="absolute left-[20px] top-[39%]" src="/Etiquette50ml.webp" alt="Etiquettes 50 ML" width={135} height={175} fetchPriority={isPriority ? "high" : "low"} priority={isPriority} />
             </div>
             <div className="flex relative h-fit self-end overflow-hidden">
-                <Image className="self-end" src="/Flacon5ml.webp" alt="Flacon" width={55} height={219} fetchPriority={isPriority ? "high" : "low"} />
+                <Image className="self-end" src="/Flacon5ml.webp" alt="Flacon" width={55} height={219} fetchPriority={isPriority ? "high" : "low"} priority={isPriority} />
                 <Etiquette
                     direction="horizontal"
                     text={etiquette.name}

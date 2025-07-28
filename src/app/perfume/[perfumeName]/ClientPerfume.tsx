@@ -23,7 +23,7 @@ export default function PerfumeClient({ etiquette, animate = true }: { etiquette
                 </div>
             </div>
             <div id="Flacons" className="flex relative h-fit self-end">
-                <Image className="self-end" src={"/Flacon50ml.webp"} alt={"Flacon"} width={175} height={318} />
+                <Image className="self-end" src={"/Flacon50ml.webp"} alt={"Flacon"} width={175} height={314} />
                 <Image className="absolute left-[20px] top-[39%]" src="/Etiquette50ml.webp" alt="Etiquettes 50 ML" width={135} height={175} />
             </div>
             <div className="flex relative h-fit self-end overflow-hidden">

@@ -14,29 +14,6 @@ export default function Perfumes() {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [data, setData] = useState<IEtiquette[] | null>(null);
     const [currentEtiquette, setEtiquette] = useState<IEtiquette[][number] | null>(null);
-    let productSchema: WithContext<Product> | null = null;
-    
-    if (currentEtiquette)
-        productSchema = {
-        "@context": "https://schema.org",
-        "@type": "Product",
-        "name": currentEtiquette.name,
-        "description": currentEtiquette.description,
-        "sku": currentEtiquette.sku,
-        "image": currentEtiquette.image,
-        "offers": {
-            "@type": "Offer",
-            "priceCurrency": "EUR",
-            "price": currentEtiquette.price,
-            "itemCondition": "https://schema.org/NewCondition",
-            "availability": currentEtiquette.availability,
-            "url": `https://www.luciasylvia.fr`,
-            "seller": {
-                "@type": "Organization",
-                "name": "Lucia Sylvia - Parfumerie Naturelle"
-            }
-        }
-    };
 
     useEffect(() => {
         const fetchData = async () => {
@@ -85,7 +62,6 @@ export default function Perfumes() {
                     </CarouselVertical>
                 </div>
                 <PerfumeClient etiquette={currentEtiquette} animate={animate} />
-                {productSchema && <StructuredData data={productSchema} />}
             </div>
         </div>
     )

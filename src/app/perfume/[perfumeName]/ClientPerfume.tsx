@@ -5,7 +5,7 @@ import Notes from "@/app/Components/Notes";
 import { IEtiquette } from "@/app/etiquettes";
 import Image from "next/image";
 import { carattere } from "@/app/fonts";
-import "style.css";
+import "./style.css";
 
 export default function PerfumeClient({ etiquette, animate = true, isPriority = false }: { etiquette: IEtiquette | null, animate?: boolean, isPriority?: boolean }) {
     if (etiquette === null)

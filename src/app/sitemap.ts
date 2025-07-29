@@ -25,18 +25,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: 'yearly',
       priority: 1, // La page d'accueil est généralement la plus importante
     },
-    {
-      url: 'https://luciasylvia.fr/#Parfums',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: 'https://luciasylvia.fr/#Contacts',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.5,
-    },
     ...perfumeEntries,
   ];
 }

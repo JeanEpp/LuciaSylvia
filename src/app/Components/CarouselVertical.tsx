@@ -63,7 +63,7 @@ const CarouselVertical: React.FC<CarouselProps> = ({ auto, children, className, 
 
     return (
         <div id={id} className={`${className} flex items-center justify-center flex-col`}>
-            <button onClick={handlePrev} className="text-white hover:text-amber-700 transition rounded-full">
+            <button onClick={handlePrev} className="text-white min-h-12 hover:text-amber-700 transition rounded-full">
                 <BsChevronCompactUp size={75} viewBox="0 0 16 16" role='button' aria-label='Parfum précédent' />
             </button>
             <div className={`flex overflow-hidden`} style={{ height: `${height}px` }}>
@@ -77,7 +77,7 @@ const CarouselVertical: React.FC<CarouselProps> = ({ auto, children, className, 
                     }
                 </div>
             </div>
-            <button onClick={handleNext} className="text-white hover:text-amber-700 transition rounded-full">
+            <button onClick={handleNext} className="text-white min-h-12 hover:text-amber-700 transition rounded-full">
                 <BsChevronCompactDown size={75} viewBox="0 0 16 16" role='button' aria-label="Parfum suivant" />
             </button>
         </div>

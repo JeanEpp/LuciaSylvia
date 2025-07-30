@@ -70,7 +70,7 @@ export default function PerfumeClient({ etiquette, animate = true, isPriority = 
                             {etiquette.price?.toString().replace('.', ",")} €/ml
                         </div>
                     </div>
-                    <div className={`col-span-3 lg:col-span-4 items-center`}>
+                    <div className={`col-span-3 lg:col-span-4 items-center d-flex`}>
                         <p className={`${animate ? "animate-fade-in" : "animate-fade-out"}`}>{etiquette.description}</p>
                         <ScrollLink
                             href="#Contacts"
@@ -78,7 +78,7 @@ export default function PerfumeClient({ etiquette, animate = true, isPriority = 
                             smooth={true}
                             duration={600}
                             offset={0}>
-                            <button className={`${carattere.className} mt-5 text-xl bg-[#262626] text-white rounded-2xl px-4 py-2 cursor-pointer`} role="button" aria-label="Commander un parfum">
+                            <button className={`${carattere.className} w-full max-w-3xs mt-5 text-xl bg-[#262626] text-white rounded-2xl px-4 min-h-12 cursor-pointer`} role="button" aria-label="Commander un parfum">
                                 Commander
                             </button>
                         </ScrollLink>

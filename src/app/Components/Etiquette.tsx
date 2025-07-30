@@ -27,7 +27,7 @@ const Etiquette: React.FC<EtiqettesProps> = ({ onClick, className, text, directi
         );
     else
         return (
-            <button onClick={onClick} className={`${carattere.className} flex transition-colors ${className} bg-[#262626] w-48 h-[75px] rounded-2xl items-center justify-center ${direction == "horizontal" ? "flex-row" : ""}`} role="button" aria-label={text}>
+            <button onClick={onClick} className={`${carattere.className} min-h-12 flex transition-colors ${className} bg-[#262626] w-48 h-[75px] rounded-2xl items-center justify-center ${direction == "horizontal" ? "flex-row" : ""}`} role="button" aria-label={text}>
                 <div className={`text-3xl flex items-center justify-center text-white hover:text-[#e6b94a] transition duration-100 text-nowrap ${animate ? "animate-fade-in" : "animate-fade-out"}`}>
                     {text}
                 </div>

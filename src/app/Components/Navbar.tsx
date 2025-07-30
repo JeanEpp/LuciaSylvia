@@ -9,9 +9,9 @@ export default function Navbar() {
 
 	return (
 		<header className="top-0 h-0 z-50 sticky">
-			<nav className="w-full lg:justify-items-center p-4 lg:px-6 bg-white brightness-100 backdrop-blur-sm" aria-label="Global">
+			<nav className="w-full lg:justify-items-center px-4 sm:py-4 lg:px-6 bg-white brightness-100 backdrop-blur-sm" aria-label="Global">
 				<div className="w-full flex relative justify-center gap-x-28">
-					<button role="button" aria-label={isOpen ? "Fermer le menu" : "Ouvrir le menu"} onClick={() => setIsOpen(!isOpen)} className="-m-2.5 mr-auto inline-flex sm:hidden items-center justify-center rounded-md p-2.5 text-gray-700">
+					<button role="button" aria-label={isOpen ? "Fermer le menu" : "Ouvrir le menu"} onClick={() => setIsOpen(!isOpen)} className="-m-2. min-h-12 mr-auto inline-flex sm:hidden items-center justify-center rounded-md p-2.5 text-gray-700">
 						<span className="sr-only">Open main menu</span>
 						<svg className="size-6" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
 							<path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
@@ -50,7 +50,7 @@ export default function Navbar() {
 			</nav>
 			<div className={`sm:hidden duration-300 fixed inset-y-0 z-50 w-full overflow-y-auto ${isOpen ? "" : "-translate-x-full md:-translate-x-[384px]"} bg-white px-6 py-6 sm:max-w-1/3 sm:ring-1 sm:ring-gray-900/10`}>
 				<div className="flex items-center justify-between">
-					<button role="button" aria-label={isOpen ? "Fermer le menu" : "Ouvrir le menu"} onClick={() => setIsOpen(false)} className="-m-2.5 rounded-md p-2.5 text-gray-700">
+					<button role="button" aria-label={isOpen ? "Fermer le menu" : "Ouvrir le menu"} onClick={() => setIsOpen(false)} className="-m-2.5 min-h-12 rounded-md p-2.5 text-gray-700">
 						<span className="sr-only">Close menu</span>
 						<svg className="size-6" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
 							<path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />

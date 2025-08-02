@@ -17,6 +17,7 @@ export interface IEtiquette {
     | 'https://schema.org/PreSale'
     | 'https://schema.org/SoldOut';
     image: string[];
+    url: string;
 }
 
 export default async function getPerfumeNames() : Promise<IEtiquette[]> {

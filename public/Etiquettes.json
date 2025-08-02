@@ -8,7 +8,8 @@
             "composition": ["Bergamote", "Rose", "Romarin"],
             "price": 1.30,
             "availability": "https://schema.org/InStock",
-            "image": ["https://www.luciasylvia.fr/Flacon10ml/Agrippina.webp"]
+            "image": ["https://www.luciasylvia.fr/Flacon10ml/Agrippina.webp"],
+            "url": "Agrippina"
         },
         {
             "name": "Amarante",
@@ -17,7 +18,8 @@
             "composition": ["Fruits rouges", "Bois", "Cassis"],
             "price": 1.40,
             "availability": "https://schema.org/InStock",
-            "image": ["https://www.luciasylvia.fr/Flacon10ml/Amarante.webp"]
+            "image": ["https://www.luciasylvia.fr/Flacon10ml/Amarante.webp"],
+            "url": "Amarante"
         },
         {
             "name": "Arille",
@@ -26,7 +28,8 @@
             "composition": [],
             "price": 1.30,
             "availability": "https://schema.org/InStock",
-            "image": ["https://www.luciasylvia.fr/Flacon10ml/Arille.webp"]
+            "image": ["https://www.luciasylvia.fr/Flacon10ml/Arille.webp"],
+            "url": "Arille"
         },
         {
             "name": "Caliche",
@@ -35,7 +38,8 @@
             "composition": [],
             "price": 1.20,
             "availability": "https://schema.org/InStock",
-            "image": ["https://www.luciasylvia.fr/Flacon10ml/Caliche.webp"]
+            "image": ["https://www.luciasylvia.fr/Flacon10ml/Caliche.webp"],
+            "url": "Caliche"
         },
         {
             "name": "Cananga",
@@ -44,7 +48,8 @@
             "composition": [],
             "price": 1.50,
             "availability": "https://schema.org/InStock",
-            "image": ["https://www.luciasylvia.fr/Flacon10ml/Cananga.webp"]
+            "image": ["https://www.luciasylvia.fr/Flacon10ml/Cananga.webp"],
+            "url": "Cananga"
         },
         {
             "name": "Esperente",
@@ -53,7 +58,8 @@
             "composition": [],
             "price": 1.20,
             "availability": "https://schema.org/InStock",
-            "image": ["https://www.luciasylvia.fr/Flacon10ml/Esperente.webp"]
+            "image": ["https://www.luciasylvia.fr/Flacon10ml/Esperente.webp"],
+            "url": "Esperente"
         },
         {
             "name": "Havane",
@@ -62,7 +68,8 @@
             "composition": [],
             "price": 1.60,
             "availability": "https://schema.org/InStock",
-            "image": ["https://www.luciasylvia.fr/Flacon10ml/Havane.webp"]
+            "image": ["https://www.luciasylvia.fr/Flacon10ml/Havane.webp"],
+            "url": "Havane"
         },
         {
             "name": "Kalahari",
@@ -71,7 +78,8 @@
             "composition": [],
             "price": 1.10,
             "availability": "https://schema.org/InStock",
-            "image": ["https://www.luciasylvia.fr/Flacon10ml/Kalahari.webp"]
+            "image": ["https://www.luciasylvia.fr/Flacon10ml/Kalahari.webp"],
+            "url": "Kalahari"
         },
         {
             "name": "L'harmonieux",
@@ -80,7 +88,8 @@
             "composition": [],
             "price": 1.40,
             "availability": "https://schema.org/InStock",
-            "image": ["https://www.luciasylvia.fr/Flacon10ml/Harmonieux.webp"]
+            "image": ["https://www.luciasylvia.fr/Flacon10ml/Harmonieux.webp"],
+            "url": "L'harmonieux"
         },
         {
             "name": "Le concret",
@@ -89,7 +98,8 @@
             "composition": [],
             "price": 1.40,
             "availability": "https://schema.org/InStock",
-            "image": ["https://www.luciasylvia.fr/Flacon10ml/Concret.webp"]
+            "image": ["https://www.luciasylvia.fr/Flacon10ml/Concret.webp"],
+            "url": "Le%20concret"
         },
         {
             "name": "Le créatif",
@@ -98,7 +108,8 @@
             "composition": [],
             "price": 1.40,
             "availability": "https://schema.org/InStock",
-            "image": ["https://www.luciasylvia.fr/Flacon10ml/Creatif.webp"]
+            "image": ["https://www.luciasylvia.fr/Flacon10ml/Creatif.webp"],
+            "url": "Le%20creatif"
         },
         {
             "name": "Le libre",
@@ -107,7 +118,8 @@
             "composition": [],
             "price": 1.40,
             "availability": "https://schema.org/InStock",
-            "image": ["https://www.luciasylvia.fr/Flacon10ml/Libre.webp"]
+            "image": ["https://www.luciasylvia.fr/Flacon10ml/Libre.webp"],
+            "url": "Le%20libre"
         },
         {
             "name": "Le pionnier",
@@ -116,7 +128,8 @@
             "composition": [],
             "price": 1.40,
             "availability": "https://schema.org/InStock",
-            "image": ["https://www.luciasylvia.fr/Flacon10ml/Pionnier.webp"]
+            "image": ["https://www.luciasylvia.fr/Flacon10ml/Pionnier.webp"],
+            "url": "Le%20pionnier"
         },
         {
             "name": "Le protecteur",
@@ -125,43 +138,48 @@
             "composition": [],
             "price": 1.40,
             "availability": "https://schema.org/InStock",
-            "image": ["https://www.luciasylvia.fr/Flacon10ml/Protecteur.webp"]
+            "image": ["https://www.luciasylvia.fr/Flacon10ml/Protecteur.webp"],
+            "url": "Le%20protecteur"
         },
         {
             "name": "Le puissant",
             "description": "Le Puissant est un parfum floral et frais. La rose rouge et l’iris se mêlent aux notes d’agrumes, posées sur un fond boisé de oud, patchouli et vétiver. L’ambre apporte une chaleur douce et équilibrée.",
             "sku": "PERFUME-PUISSANT",
             "composition": [],
-            "image": ["https://www.luciasylvia.fr/Flacon10ml/Puissant.webp"],
             "price": 1.40,
-            "availability": "https://schema.org/InStock"
+            "availability": "https://schema.org/InStock",
+            "image": ["https://www.luciasylvia.fr/Flacon10ml/Puissant.webp"],
+            "url": "Le%20puissant"
         },
         {
             "name": "Le spirituel",
             "description": "Le Spirituel est un parfum frais et terreux. Les fleurs blanches, la bergamote et le pamplemousse apportent une fraîcheur légère, posée sur un fond de patchouli et de graine d’ambrette. Une senteur calme et ancrée",
             "sku": "PERFUME-SPIRITUEL",
             "composition": [],
-            "image": ["https://www.luciasylvia.fr/Flacon10ml/Spirituel.webp"],
             "price": 1.40,
-            "availability": "https://schema.org/InStock"
+            "availability": "https://schema.org/InStock",
+            "image": ["https://www.luciasylvia.fr/Flacon10ml/Spirituel.webp"],
+            "url": "Le%20spirituel"
         },
         {
             "name": "Myrrha",
             "description": "Myrrha est un parfum frais et boisé, aux accents épicés. Il mêle les notes du cyprès, du cèdre et du patchouli au côté poudré de l’iris, sur un fond profond de myrrhe, d’ambre, de cuir, et de vanille.",
             "sku": "PERFUME-MYRRHA",
             "composition": [],
-            "image": ["https://www.luciasylvia.fr/Flacon10ml/Myrrha.webp"],
             "price": 1.60,
-            "availability": "https://schema.org/InStock"
+            "availability": "https://schema.org/InStock",
+            "image": ["https://www.luciasylvia.fr/Flacon10ml/Myrrha.webp"],
+            "url": "Myrrha"
         },
         {
             "name": "Orior",
             "description": "Orior est un parfum oriental chaud et fleuri. Il mêle la fraîcheur de la bergamote aux notes florales de rose, de jasmin et de fleur d’oranger, relevées par une touche de fruits rouges. En fond, le patchouli, le cèdre, l’encens, l’ambre et le musc apportent profondeur et chaleur.",
             "sku": "PERFUME-ORIOR",
             "composition": [],
-            "image": ["https://www.luciasylvia.fr/Flacon10ml/Orior.webp"],
             "price": 1.60,
-            "availability": "https://schema.org/InStock"
+            "availability": "https://schema.org/InStock",
+            "image": ["https://www.luciasylvia.fr/Flacon10ml/Orior.webp"],
+            "url": "Orior"
         },
         {
             "name": "Vedado",
@@ -170,7 +188,8 @@
             "composition": [],
             "price": 1.60,
             "availability": "https://schema.org/InStock",
-            "image": ["https://www.luciasylvia.fr/Flacon10ml/Vedado.webp"]
+            "image": ["https://www.luciasylvia.fr/Flacon10ml/Vedado.webp"],
+            "url": "Vedado"
         }
     ]
 }

@@ -28,7 +28,7 @@ export default function PerfumeClient({ etiquette, animate = true, isPriority = 
                 "price": etiquette.price,
                 "itemCondition": "https://schema.org/NewCondition",
                 "availability": etiquette.availability,
-                "url": `https://www.luciasylvia.fr/perfume/` + etiquette.name.replace(/ /g, ""),
+                "url": `https://www.luciasylvia.fr/perfume/` + etiquette.url,
                 "seller": {
                     "@type": "Organization",
                     "name": "Lucia Sylvia - Parfumerie Naturelle"

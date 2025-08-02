@@ -7,19 +7,19 @@ export async function generateStaticParams() {
   const perfumes = await getPerfumeNames();
 
   return perfumes.map((perfume: IEtiquette) => ({
-    perfumeName: perfume.name
+    perfumeName: perfume.url
   }))
 }
 
 export default async function Page({ params }: { params: Promise<{ perfumeName: string }> }) {
   const { perfumeName } = await params;
   const perfumes = await getPerfumeNames();
-  const etiquette = perfumes.find((p: IEtiquette) => p.name === perfumeName) ?? null;
+  const etiquette = perfumes.find((p: IEtiquette) => p.url === perfumeName) ?? null;
 
   return (
     <>
       <div id="Parfums" className="h-min:screen text-center justify-items-center pt-20 content-center space-y-9">
-        <h1 className={`${carattere.className} text-5xl font-semibold text-balance text-white text-center sm:text-5xl`}>{perfumeName ?? ""}</h1>
+        <h1 className={`${carattere.className} text-5xl font-semibold text-balance text-white text-center sm:text-5xl`}>{etiquette?.name ?? ""}</h1>
         <PerfumeClient etiquette={etiquette} isPriority={true}/>
       </div>
       <Contacts />

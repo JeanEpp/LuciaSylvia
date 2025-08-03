@@ -2,6 +2,7 @@ import Data from "../../public/Etiquettes.json";
 
 export interface IEtiquette {
     name: string;
+    url: string;
     description: string;
     sku: string;
     composition: string[];
@@ -17,9 +18,20 @@ export interface IEtiquette {
     | 'https://schema.org/PreSale'
     | 'https://schema.org/SoldOut';
     image: string[];
-    url: string;
 }
 
-export default async function getPerfumeNames() : Promise<IEtiquette[]> {
-  return Data.Etiquettes as IEtiquette[];
+export default async function getPerfumeNames(): Promise<IEtiquette[]> {
+  const etiquettes: IEtiquette[] = Data.Etiquettes.map((etiquette: any) => {
+    const url = etiquette.name.replace(/ /g, "-").replace(/é/g, "e");
+    return {
+      ...etiquette,
+      url,
+      sku: `PERFUME-${url.toUpperCase()}`,
+      availability: etiquette.availability as IEtiquette["availability"],
+      image: [
+        "https://www.luciasylvia.fr/Flacon10ml/" + url + ".webp"
+      ]
+    };
+  });
+  return etiquettes;
 }

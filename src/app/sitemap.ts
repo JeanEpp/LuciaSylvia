@@ -3,7 +3,7 @@ import getPerfumeNames from './etiquettes';
 
 async function getPerfumesForSitemap() {
   const perfumes = await getPerfumeNames();
-  return perfumes.map(p => ({ name: p.name, lastModified: new Date() }));
+  return perfumes.map(p => ({ name: p.url, lastModified: new Date() }));
 }
 
 export const dynamic = 'force-static';

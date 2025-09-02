@@ -2,7 +2,6 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Link as ScrollLink } from "react-scroll";
-import { useRouter } from "next/navigation";
 import { carattere } from "@/app/fonts";
 
 interface NavlinkProps {
@@ -16,7 +15,7 @@ function NavLink({ name, href, onClick }: NavlinkProps) {
 
 	useEffect(() => {
 		setAnchorExists(!!document.getElementById(name));
-	}, []);
+	}, [name]);
 
 	if (anchorExists) {
 		return (

@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { BsChevronDown, BsChevronUp } from "react-icons/bs";
+import { BsChevronDown } from "react-icons/bs";
 
 interface AccordionItem {
     title: string;

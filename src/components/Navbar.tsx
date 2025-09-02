@@ -20,6 +20,7 @@ function NavLink({ name, href, onClick }: NavlinkProps) {
 	if (anchorExists) {
 		return (
 			<ScrollLink
+			    href={'#' + name}
 				to={name}
 				smooth={true}
 				duration={700}

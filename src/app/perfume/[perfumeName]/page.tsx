@@ -1,6 +1,6 @@
 import getPerfumeNames, { IEtiquette } from "@/app/etiquettes";
 import PerfumeClient from "@/app/perfume/[perfumeName]/ClientPerfume";
-import Contacts from '@/app/Page/Contacts';
+import Contacts from '@/app/_home/Contacts';
 import { carattere } from "@/app/fonts";
 import { Metadata } from 'next';
 
@@ -41,7 +41,7 @@ export default async function Page({ params }: { params: Promise<{ perfumeName: 
 
   return (
     <>
-      <div id="Parfums" className="h-min:screen text-center justify-items-center pt-20 content-center space-y-9">
+      <div id="Parfums" className="h-min:screen text-center justify-items-center pt-8 sm:pt-10 content-center space-y-9">
         <h1 className={`${carattere.className} text-5xl font-semibold text-balance text-white text-center sm:text-5xl`}>{etiquette?.name ?? ""}</h1>
         <PerfumeClient etiquette={etiquette} isPriority={true}/>
       </div>

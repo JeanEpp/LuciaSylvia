@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
-import Navbar from "@/app/Components/Navbar";
+import Navbar from "@/components/Navbar";
 import "@/app/globals.css";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Lucia Sylvia - Parfumerie Naturelle",
@@ -32,11 +33,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr">
+    <html lang="fr" data-scroll-behavior="smooth">
       <body className={`antialiased top-0`}>
           <Navbar />
-          <div className="pt-14 lg:px-8">
+          <div className="flex flex-col sm:pt-21 pt-17 lg:px-8 min-h-screen">
             {children}
+            <Footer />
           </div>
       </body>
     </html>

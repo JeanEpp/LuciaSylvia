@@ -19,8 +19,8 @@ const Etiquette: React.FC<EtiqettesProps> = ({ onClick, className, text, directi
                 <p className={`rotate-90 text-[29px] h-[55%] flex items-center text-white justify-center hover:text-[#e6b94a] transition duration-100 text-nowrap ${animate ? "animate-fade-in" : "animate-fade-out"}`}>
                     {text}
                 </p>
-                <div className='relative top-[7%]'>
-                    <Image src={"/Libellule.webp"} alt={"Libellule"} width={60} height={68} />
+                <div className='relative top-[7%] h-[68px] w-[60px]'>
+                    <Image src={"/Libellule.webp"} alt={"Libellule"} fill={true} />
                 </div>
                 <div className='relative top-[0%] text-[22px] justify-items-center'>
                     <p className="absolute">LS</p>

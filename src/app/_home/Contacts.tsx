@@ -4,7 +4,7 @@ import { carattere } from "@/app/fonts";
 
 export default function Contacts() {
     return (
-        <div id="Contacts" className="h-screen justify-items-center content-center relative isolate px-6 lg:px-8 pt-14">
+        <div id="Contacts" className="justify-items-center content-center relative isolate px-6 py-8 lg:px-8">
             <p className={`${carattere.className} text-2xl lg:text-3xl max-w-3xl text-center pb-5 sm:pb-10`}>
                 {"Pour toute commande, n'hesitez pas à me contacter par Email, Sms ou Téléphone, avec les parfums que vous souhaiter, leurs formats 5/10/50 ml, ainsi que votre adresse."}
             </p>

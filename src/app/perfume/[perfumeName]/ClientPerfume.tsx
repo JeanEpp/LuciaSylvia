@@ -1,15 +1,18 @@
 "use client";
 import { Link as ScrollLink } from "react-scroll";
-import Etiquette from "@/app/Components/Etiquette";
-import Notes from "@/app/Components/Notes";
+import Etiquette from "@/components/Etiquette";
+import Notes from "@/components/Notes";
 import { IEtiquette } from "@/app/etiquettes";
 import Image from "next/image";
 import { carattere } from "@/app/fonts";
 import { Product, WithContext } from "schema-dts";
 import "./style.css";
-import StructuredData from "@/app/Components/StructuredData";
+import StructuredData from "@/components/StructuredData";
+import { usePathname } from 'next/navigation'
 
 export default function PerfumeClient({ etiquette, animate = true, isPriority = false }: { etiquette: IEtiquette | null, animate?: boolean, isPriority?: boolean }) {
+    const pathname = usePathname()
+    
     if (etiquette === null)
         return <div id="Parfums" className="text-white text-center">Loading...</div>;
     else {
@@ -70,17 +73,25 @@ export default function PerfumeClient({ etiquette, animate = true, isPriority = 
                             {etiquette.price?.toString().replace('.', ",")} €/ml
                         </div>
                     </div>
-                    <div className={`col-span-3 lg:col-span-4 items-center d-flex`}>
-                        <p className={`${animate ? "animate-fade-in" : "animate-fade-out"}`}>{etiquette.description}</p>
+                    <div className={`col-span-3 lg:col-span-4 items-center`}>
+                        <p className={`${animate ? "animate-fade-in" : "animate-fade-out"} w-full`}>{etiquette.description}</p>
+                    </div>
+                    <div className={`col-span-3 lg:col-span-4 items-center justify-center space-y-5 sm:space-y-0 sm:space-x-5 flex flex-col sm:flex-row`}>
+                        { pathname !== "/perfume/" + etiquette.url &&
+                        <a href={"perfume/" + etiquette.url} className={`${carattere.className} w-full max-w-3xs text-xl bg-[#262626] text-(--foreground) rounded-2xl px-4 min-h-12 cursor-pointer content-center`} role="button" aria-label="Commander un parfum">
+                                Voir la page produit
+                        </a>
+                        }
                         <ScrollLink
+                            className={`${carattere.className} w-full max-w-3xs text-xl bg-[#262626] text-(--foreground) rounded-2xl px-4 min-h-12 cursor-pointer content-center`}
+                            role="button"
+                            aria-label="Commander un parfum"
                             href="#Contacts"
                             to="Contacts"
                             smooth={true}
                             duration={600}
                             offset={0}>
-                            <button className={`${carattere.className} w-full max-w-3xs mt-5 text-xl bg-[#262626] text-white rounded-2xl px-4 min-h-12 cursor-pointer`} role="button" aria-label="Commander un parfum">
                                 Commander
-                            </button>
                         </ScrollLink>
                     </div>
                 </div>

@@ -1,11 +1,59 @@
 "use client"
+import { useEffect, useState } from "react";
 import Link from "next/link";
-import { useState } from "react";
 import { Link as ScrollLink } from "react-scroll";
+import { useRouter } from "next/navigation";
 import { carattere } from "@/app/fonts";
+
+interface NavlinkProps {
+	name: string;
+	href: string;
+	onClick: () => void;
+}
+
+function NavLink({ name, href, onClick }: NavlinkProps) {
+	const [anchorExists, setAnchorExists] = useState(false);
+
+	useEffect(() => {
+		setAnchorExists(!!document.getElementById(name));
+	}, []);
+
+	if (anchorExists) {
+		return (
+			<ScrollLink
+				to={name}
+				smooth={true}
+				duration={700}
+				offset={-60}
+				className="text-base/7 sm:text-xl/6 font-semibold text-(--background) cursor-pointer"
+				activeClass="text-amber-600"
+				onClick={onClick}
+			>
+				{name}
+			</ScrollLink>
+		);
+	} else {
+		return (
+			<Link
+				href={href + (name ? '#' + name : "")}
+				className="text-base/7 sm:text-xl/6 font-semibold text-(--background) cursor-pointer"
+				onClick={() => {
+					onClick();
+					setAnchorExists(true);
+				}}
+			>
+				{name}
+			</Link>
+		);
+	}
+}
 
 export default function Navbar() {
 	const [isOpen, setIsOpen] = useState(false);
+
+	const handleNavLinkClick = () => {
+		setIsOpen(!isOpen)
+	}
 
 	return (
 		<header className="top-0 h-0 z-50 sticky">
@@ -18,33 +66,13 @@ export default function Navbar() {
 						</svg>
 					</button>
 					<div className="hidden sm:block w-1/2 sm:text-end">
-						<ScrollLink
-							href="#Parfums"
-							to="Parfums"
-							smooth={true}
-							duration={700} 
-							offset={0}
-							className="text-xl/6 font-semibold text-gray-900 cursor-pointer"
-							activeClass="text-amber-600"
-						>
-							Parfums
-						</ScrollLink>
+						<NavLink name="Parfums" href="/" onClick={handleNavLinkClick} />
 					</div>
 					<Link href="/" className={`${carattere.className} absolute shadow-black shadow h-14 w-14 top-2.5 rounded-full bg-white text-black text-center text-[22px] content-center`}>
-						<div className="pr-1 line" style={{lineHeight: 2.7}}>LS</div>
+						<div className="pr-1 line" style={{ lineHeight: 2.7 }}>LS</div>
 					</Link>
 					<div className="hidden sm:block w-1/2">
-						<ScrollLink
-							href="#Contacts"
-							to="Contacts"
-							smooth={true}
-							duration={700}
-							offset={0}
-							className="text-xl/6 font-semibold text-gray-900 cursor-pointer"
-							activeClass="text-amber-600"
-						>
-							Coordonnées
-						</ScrollLink>
+						<NavLink name="Contacts" href="/" onClick={handleNavLinkClick} />
 					</div>
 				</div>
 			</nav>
@@ -59,31 +87,9 @@ export default function Navbar() {
 				</div>
 				<div className="mt-6 flow-root">
 					<div className="-my-6 divide-y divide-gray-500/10">
-						<div className="space-y-2 py-6">
-							<ScrollLink
-								href="#Parfums"
-								to="Parfums"
-								smooth={true}
-								duration={700}
-								offset={-20}
-								className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50 cursor-pointer"
-								onClick={() => setIsOpen(false)}
-								activeClass="text-amber-600"
-							>
-								Parfums
-							</ScrollLink>
-							<ScrollLink
-								href="#Contacts"
-								to="Contacts"
-								smooth={true}
-								duration={700}
-								offset={-20}
-								className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50 cursor-pointer"
-								onClick={() => setIsOpen(false)}
-								activeClass="text-amber-600"
-							>
-								Coordonnées
-							</ScrollLink>
+						<div className="flex flex-col sm:block space-y-2 py-6">
+							<NavLink name="Parfums" href="/" onClick={handleNavLinkClick} />
+							<NavLink name="Contacts" href="/" onClick={handleNavLinkClick} />
 						</div>
 					</div>
 				</div>

@@ -10,7 +10,7 @@
         },
         {
             "name": "Amarante",
-            "description": "Amarante est un parfum gourmand aux accents de fruits rouges. Cassis, mûre et groseilles s’y mêlent à des notes douces de bois, de feuilles de cassis et de cerisier, pour une senteur riche et chaleureuse",
+            "description": "Amarante est un parfum gourmand aux accents de fruits rouges. Cassis, mûre et groseilles s’y mêlent à des notes douces de bois, de feuilles de cassis et de cerisier, pour une senteur riche et chaleureuse.",
             "composition": ["Fruits rouges", "Bois", "Cassis"],
             "price": 1.40,
             "availability": "https://schema.org/InStock"
